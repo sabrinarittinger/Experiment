@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Introduction
+{% endblock %}
+
+{% block content %}
+{% formfield player.name %} 
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+    
+
+{% endblock %}

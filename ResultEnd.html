@@ -1,0 +1,51 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Result{% endblock %}
+{% block content %}
+
+
+<table style="width:100%">
+	<tr>
+		<th> {{name.0}} </th>
+		<th> {{resultlistend.0}} </th>
+		
+	</tr>
+	
+	<tr>
+		<th> {{name.1}} </th>
+		<th> {{resultlistend.1}} </th>
+		
+	</tr>
+	
+	<tr>
+		<th> {{name.2}} </th>
+		<th> {{resultlistend.2}} </th>
+	
+	</tr>
+	
+	<tr>
+		<th> {{name.3}} </th>
+		<th> {{resultlistend.3}} </th>
+	
+	</tr>
+	
+	<tr>
+		<th> {{name.4}} </th>
+		<th> {{resultlistend.4}} </th>
+	
+	</tr>
+	
+	<tr>
+		<th> {{name.5}} </th>
+		<th> {{resultlistend.5}} </th>
+	
+	</tr>
+</table>
+
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+{% endblock %}

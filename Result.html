@@ -1,0 +1,51 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Zusammenfassung dieser Phase{% endblock %}
+{% block content %}
+<p> Bisher erreichte Gewinnpunkte nach Spieler. {{reveal}}</p>
+
+<table style="width:100%">
+	<tr>
+		<th> {{name.0}} </th>
+		<th> {{resultlist.0}} </th>
+		<th> {% formfield player.sabotage1 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.1}} </th>
+		<th> {{resultlist.1}} </th>
+		<th> {% formfield player.sabotage2 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.2}} </th>
+		<th> {{resultlist.2}} </th>
+		<th> {% formfield player.sabotage3 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.3}} </th>
+		<th> {{resultlist.3}} </th>
+		<th> {% formfield player.sabotage4 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.4}} </th>
+		<th> {{resultlist.4}} </th>
+		<th> {% formfield player.sabotage5 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.5}} </th>
+		<th> {{resultlist.5}} </th>
+		<th> {% formfield player.sabotage6 %} </th>
+	</tr>
+</table>
+
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+{% endblock %}

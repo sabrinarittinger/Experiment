@@ -1,0 +1,14 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Selection{% endblock %}
+{% block content %}
+<p>Please enter a value from 1 to 20. {{rundennr}} {{namecheck}}</p>
+
+{% formfield player.selection %}
+<button name = "weiter" class="otree-btn-next btn btn-primary">Fertig</button>
+{% endblock %}

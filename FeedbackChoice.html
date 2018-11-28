@@ -1,0 +1,21 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Feedback Choice{% endblock %}
+{% block content %}
+<p>Do you want feedback for all periods of this trial? {{rundennr}}</p>
+
+    <div>
+       <button name="choicefeedback" value="True" class="btn btn-primary btn-large">Ja</button>
+       <button name="choicefeedback" value="False" class="btn btn-primary btn-large">Nein</button>
+    </div>	
+	
+	
+{% endblock%}
+{% block scripts %}
+
+{% endblock %}

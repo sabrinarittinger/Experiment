@@ -1,0 +1,50 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Result{% endblock %}
+{% block content %}
+
+<table style="width:100%">
+	<tr>
+		<th> {{name.0}} </th>
+		<th> {{resultlist2.0}} </th>
+		<th> {% formfield player.sabotage111 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.1}} </th>
+		<th> {{resultlist2.1}} </th>
+		<th> {% formfield player.sabotage222 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.2}} </th>
+		<th> {{resultlist2.2}} </th>
+		<th> {% formfield player.sabotage333 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.3}} </th>
+		<th> {{resultlist2.3}} </th>
+		<th> {% formfield player.sabotage444 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.4}} </th>
+		<th> {{resultlist2.4}} </th>
+		<th> {% formfield player.sabotage555 %} </th>
+	</tr>
+	
+	<tr>
+		<th> {{name.5}} </th>
+		<th> {{resultlist2.5}} </th>
+		<th> {% formfield player.sabotage666 %} </th>
+	</tr>
+</table>
+
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+{% endblock %}

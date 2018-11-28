@@ -1,0 +1,65 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Feedback zu der aktuellen Phase{% endblock %}
+{% block content %} 
+<p> These are your choices {{periodfeedback}} in this trial so far. {{rundennr}}
+
+</p>
+
+
+<table style="width:100%">
+	<tr>
+		<th> Periode</th>
+		<th> Produktionsmenge</th>
+		<th> Gewinnpunkte</th>
+	</tr>
+	<tr>
+		<th> 1</th>
+		<th> {{periodfeedback.0}} </th>
+		<th> {{outcomefeedback.0}} </th>
+	</tr>
+	
+	<tr>
+		<th> 2</th>
+		<th> {{periodfeedback.1}} </th>
+		<th> {{outcomefeedback.1}} </th>
+	</tr>
+	
+	<tr>
+		<th> 3</th>
+		<th> {{periodfeedback.2}} </th>
+		<th> {{outcomefeedback.2}} </th>
+	</tr>
+	
+	<tr>
+		<th> 4</th>
+		<th> {{periodfeedback.3}} </th>
+		<th> {{outcomefeedback.3}} </th>
+	</tr>
+	
+	<tr>
+		<th> 5</th>
+		<th> {{periodfeedback.4}} </th>
+		<th> {{outcomefeedback.4}} </th>
+	</tr>
+	
+</table>
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+		  $(document).ready(function () {
+            $('.otree-btn-next').hide();
+            setTimeout(function () {
+                $('.otree-btn-next').show();
+            }, 10 * 1000);
+        });
+    </script>
+{% endblock %}

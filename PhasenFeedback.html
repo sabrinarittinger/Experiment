@@ -1,0 +1,38 @@
+
+
+{% extends "global/Page.html" %}
+
+{% load otree static %}
+
+
+{% block title %}Feedback zu der aktuellen Phase{% endblock %}
+{% block content %} 
+<p>  {{rundennr}} Für diese Phase wurde insgesamt erreicht:</p>
+
+
+<table style="width:100%">
+	
+	<tr>
+		<th> Summe in dieser Phase erzielten Gewinnpunkte</th>
+		<th> {{resultphase.0}} </th>
+		
+	</tr>
+	
+	<tr>
+		<th> Summer erzielter Gewinnpunkte in allen bisherigen Phasen</th>
+		<th> {{resultphase.1}} </th>
+	
+	</tr>
+	
+	<tr>
+		<th> Zeitpunkte</th>
+		<th> {{timebonus}} </th>
+		
+	</tr>
+	
+	
+	
+	
+</table>
+<button name = "weiter" class="otree-btn-next btn btn-primary">Weiter</button>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Timer Starting
+{% endblock %}
+
+{% block content %}
+
+<button name = "weiter" class="otree-btn-next btn btn-primary">Start</button>
+{% endblock %}
+
+{% block styles %}
+
+<style>
+    .otree-timer:after {
+        color: red;
+		content: "Verbleibende Zeit für diese Phase!";
+    }
+</style>
+
+{% endblock %}
